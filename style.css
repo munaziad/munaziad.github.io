@@ -147,6 +147,10 @@ section p {
     text-align: center;
 }
 
+#projects {
+    margin-bottom: 50px; /* Adds space between the section and the footer */
+}
+
 /* Footer */
 footer {
     position: fixed;
