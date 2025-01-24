@@ -143,7 +143,7 @@ section p {
 /* Styling for the note box 3 */
 .certi-box {
     display: inline-block;
-    background-color: #0c33a9; 
+    background-color: #031447; 
     padding: 5px 10px;
     margin-left: 10px;
     border-radius: 5px;
@@ -178,7 +178,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .skills-section {
+    #achievements {
         flex-direction: column; /* Stacks lists vertically */
         align-items: center; /* Centres them on the screen */
     }
@@ -201,3 +201,22 @@ footer {
 
 
 a { color: inherit; }
+
+/* Container for achievements section */
+#achievements {
+    display: flex; /* Makes the child divs align side by side */
+    justify-content: space-between; /* Adds space between the two sections */
+    gap: 20px; /* Adds spacing between the two sections */
+    margin: 20px auto; /* Centres the container and adds vertical spacing */
+    max-width: 1500px; /* Ensures the container doesn't stretch too wide */
+    padding-bottom: 50px;
+}
+
+/* Individual sections */
+#projects, #certi {
+    flex: 1; /* Ensures both sections take equal width */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
